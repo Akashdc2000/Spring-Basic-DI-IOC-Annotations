@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="org.example.Student" name="student1">
+        <property name="rollNo">
+            <value>101</value>
+        </property>
+        <property name="name">
+            <value>Akash</value>
+        </property>
+        <property name="age">
+            <value>22</value>
+        </property>
+    </bean>
+
+<!--    Bean with the help of P Schema -->
+    <bean class="org.example.Student" name="student2" p:rollNo="102" p:name="Amit" p:age="25"/>
+
+<!--    <bean class="com.constructor.injection.ConstructorInjection" name="constructorInjection">-->
+<!--        <constructor-arg value="Akash" />-->
+<!--        <constructor-arg value="22" name="age"/>-->
+<!--        <constructor-arg value="101" name="id"/>-->
+<!--    </bean>-->
+
+</beans>
